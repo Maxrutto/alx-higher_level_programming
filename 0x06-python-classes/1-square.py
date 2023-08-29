@@ -2,12 +2,13 @@
 """Define the class"""
 
 class Square:
-    """Class Square that defines a square object
-    """
-    def __init__(self, size):
-        """Initialize method that stores the size of the square"""
+    """Class - Square"""
 
-        Args:
-            param1 (int): size of the square
-
-        self.__size = size
+    def __init__(self, size=0):
+        """Constructor of a Square with the size"""
+        if (type(size) is not int):
+            raise (TypeError("size must be an integer"))
+        elif (size < 0)
+        raise (ValueError("size must be >= 0"))
+        else:
+            self.__size = size
