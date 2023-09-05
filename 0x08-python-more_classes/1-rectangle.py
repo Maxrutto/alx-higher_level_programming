@@ -2,12 +2,11 @@
 """ Defining a class Rectangle. """
 
 
-
 class Rectangle:
     """Defines a class"""
     def __init__(self, width=0, height=0):
         """Initializing variables
-        
+
         Args:
             width: Width of the rectangle
             height: Height of the rectangle
@@ -26,22 +25,19 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Method that defines the width
-        
+
         Args:
             value: value of the width
 
         Raises:
             TypeError: if width is not an integer
             ValueError: if width is less than 0
-
-
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-
 
     @property
     def height(self):
@@ -59,12 +55,10 @@ class Rectangle:
 
         Args:
             value: value of the height
-        
 
         Raises:
             TypeError: if value is not an integer
             ValueError: if value is less than 0
-
         """
 
         if not isinstance(value, int):
