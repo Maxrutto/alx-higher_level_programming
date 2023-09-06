@@ -13,8 +13,8 @@ class Rectangle:
 
         """
 
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -89,7 +89,7 @@ class Rectangle:
 
         """
         
-        if self.width or self.height == 0:
+        if self.width == 0 or self.height == 0:
             return 0
         
         return (2 * self.height) + (2 * self.width)
