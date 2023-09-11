@@ -4,7 +4,7 @@ def lookup(obj):
     of an object
 
     Args:
-        obj: The current object being listed from
+        obj: The current object being listed
 
 
     Returns:
