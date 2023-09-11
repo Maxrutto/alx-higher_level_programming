@@ -6,7 +6,7 @@ class MyList(list):
     """ This class inherits the list class attributes """
     def __init__(self):
         """ Initializes variables just like the base class """
-        super().__init__(self)
+        super().__init__()
 
     def print_sorted(self):
         """Method that prints the list in ascending order"""
