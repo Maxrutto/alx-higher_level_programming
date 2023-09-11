@@ -4,6 +4,7 @@ This module checks if an object is an instance
 
 """
 
+
 def is_same_class(obj, a_class):
     """ Defines a function
 
