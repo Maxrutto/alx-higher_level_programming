@@ -3,7 +3,13 @@
 
 
 class MyList(list):
-    """ This class inherits the list class attributes """
+    """ This class inherits the list class attributes
+
+    Args:
+        list: class list
+
+
+    """
     def __init__(self):
         """ Initializes variables just like the base class """
         super().__init__()
