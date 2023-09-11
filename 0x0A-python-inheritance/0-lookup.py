@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Defines an object attribute lookup function."""
+
+
 def lookup(obj):
     """ This function defines a list of attributes and methods
     of an object
