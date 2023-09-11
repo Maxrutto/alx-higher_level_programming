@@ -14,7 +14,7 @@ Checking for method docstring:
 	True
 
 Checking that MyList inherits from list:
-	>>> issubclass(MyLit, list)
+	>>> issubclass(MyList, list)
 	True
 
 Checking for empty list:
@@ -28,6 +28,10 @@ Checking that append works:
 	>>> l.append(3)
         >>> l.append(4)
 	>>> print(l)
+	[1, 2, 3, 4]
+
+Checking for list already in correct order:
+	>>> l.print_sorted()
 	[1, 2, 3, 4]
 
 Checking for reversed order list:
