@@ -5,6 +5,7 @@ an object is an instance of an inherited class
 
 """
 
+
 def inherits_from(obj, a_class):
     """ Definition of the function
 
