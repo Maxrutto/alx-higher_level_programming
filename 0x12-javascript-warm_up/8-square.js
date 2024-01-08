@@ -8,7 +8,7 @@ if (isNaN(num) || process.argv.length < 3) {
   for (y = 0; y < num; y++) {
     let row = '';
     for (x = 0; x < num; x++) {
-      row += 'x';
+      row += 'X';
     }
     console.log(row);
   }
