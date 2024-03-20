@@ -1,1 +1,0 @@
-This repository contains tasks that involve creating and interacting with a MySQL database named "hbtn_0e_0_usa" using Python scripts. The tasks progress from basic operations like fetching and filtering data from the database to more advanced tasks involving SQLAlchemy and database relationships.
