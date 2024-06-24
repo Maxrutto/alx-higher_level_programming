@@ -19,11 +19,10 @@ if __name__ == '__main__':
                  AS state_name \
                  FROM cities \
                  INNER JOIN states ON cities.state_id = states.id \
-                 ORDER BY cities.id ASC \
-                 LIMIT 15")
+                 ORDER BY cities.id ASC")
     rows = cur.fetchall()
     for city_id, city_name, state_name in rows:
         print("({}, '{}', '{}')".format(city_id, city_name, state_name))
-    
+
     cur.close()
     db.close()
