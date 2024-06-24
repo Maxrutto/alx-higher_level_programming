@@ -18,7 +18,8 @@ if __name__ == '__main__':
     cur.execute("SELECT DISTINCT cities.id, cities.name, states.name AS state_name \
                  FROM cities \
                  INNER JOIN states ON cities.state_id = states.id \
-                 ORDER BY cities.id ASC")
+                 ORDER BY cities.id ASC \
+                 LIMIT 15")
     rows = cur.fetchall()
     for city_id, city_name, state_name in rows:
         print("({}, '{}', '{}')".format(city_id, city_name, state_name))
