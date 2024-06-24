@@ -15,7 +15,8 @@ if __name__ == '__main__':
                          port=3306, db=argv[3])
 
     cur = db.cursor()
-    cur.execute("SELECT DISTINCT cities.id, cities.name, states.name AS state_name \
+    cur.execute("SELECT DISTINCT cities.id, cities.name, states.name \
+                 AS state_name \
                  FROM cities \
                  INNER JOIN states ON cities.state_id = states.id \
                  ORDER BY cities.id ASC \
