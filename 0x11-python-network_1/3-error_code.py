@@ -14,4 +14,4 @@ if __name__ == '__main__':
             html = resp.read()
             print("{}".format(html.decode('utf-8')))
     except error.HTTPError as e:
-        print("Error code: ", e.code)
+        print("Error code: {}".format(e.code))
